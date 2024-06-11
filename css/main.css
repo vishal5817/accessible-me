@@ -1,16 +1,12 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: #f0f0f0; /* Changed to a lighter grey for better contrast */
+  color: #333; /* Improved text color contrast */
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
@@ -39,7 +35,7 @@ img {
 
 .main-nav ul li a {
   display: block;
-  color: inherit;
+  color: #007BFF; /* Changed to a blue for better link visibility */
   text-decoration: none;
   font-size: 1.25rem;
 }
@@ -50,6 +46,7 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  border: 1px solid #ccc; /* Added border for better visibility */
 }
 
 form textarea {
@@ -60,12 +57,30 @@ form textarea {
 }
 
 form button {
-  background: none;
-  border: 2px solid black;
+  background: #007BFF; /* Added background color for better visibility */
+  color: #fff; /* White text for better contrast */
+  border: 2px solid #007BFF;
   padding: 1rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.site-footer {
-  padding: 2rem 0;
+form button:hover {
+  background: #0056b3; /* Darker background on hover */
+  border-color: #0056b3;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #007BFF;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
 }
